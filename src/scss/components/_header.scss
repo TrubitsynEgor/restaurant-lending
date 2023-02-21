@@ -3,11 +3,10 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  background-color: gray;
   width: 100%;
 
   &__container {
-    padding-top: 50px;
+    margin-top: 50px;
 
     display: flex;
   }
