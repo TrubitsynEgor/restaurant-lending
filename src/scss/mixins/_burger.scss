@@ -10,7 +10,8 @@
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: #FF7400;
+  border-radius: 25%;
   background-color: transparent;
   cursor: pointer;
 
@@ -26,11 +27,12 @@
   }
 
   &::before {
-    top: 0;
+    top: 6px;
   }
 
   &::after {
-    top: calc(100% - var(--burger-line-height));
+    bottom: 6px;
+    // top: calc(100% - var(--burger-line-height));
   }
 
   &__line {

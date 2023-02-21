@@ -10,6 +10,10 @@
     width: 30px;
     height: 100px;
     background: #FF0000;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   ::before {
@@ -20,6 +24,10 @@
     width: 30px;
     height: 100px;
     background: #FF0000;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__title {
@@ -31,14 +39,40 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 30px;
 
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
   }
 
   &__item {
     grid-column: 3 span;
 
+    & img {
+      @include mobile {
+        width: 253px;
+        height: 274px;
+      }
+    }
+
     &:first-child,
     &:last-child {
       grid-column: 6 span;
+
+      @media screen and (max-width: 606px) {
+        display: none;
+      }
+
+    }
+
+    &--special {
+      display: none;
+
+      @media screen and (max-width: 606px) {
+        display: block;
+      }
     }
   }
 }

@@ -19,6 +19,10 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile {
+      max-width: 290px;
+      height: 276px;
+    }
   }
 
   &__img {
@@ -26,6 +30,10 @@
     width: 87px;
     height: 87px;
     object-fit: cover;
+
+    @include mobile {
+      margin-top: 24px;
+    }
 
   }
 
@@ -53,6 +61,11 @@
     line-height: 30px;
     text-align: center;
     color: var(--doveGray);
+
+    @include mobile {
+      font-size: 22px;
+      line-height: 25px;
+    }
   }
 
 }

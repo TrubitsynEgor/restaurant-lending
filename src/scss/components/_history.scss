@@ -2,14 +2,24 @@
   padding-top: 59px;
   padding-bottom: 97px;
 
+  @include mobile {
+    padding-top: 10px;
+    padding-bottom: 44px;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: 444px 1fr;
     gap: 113px;
 
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
   }
 
-  &__content {}
 
   &__title {
     padding-bottom: 5px;
@@ -29,6 +39,12 @@
     display: flex;
     justify-content: center;
     gap: 44px;
+
+    @media (max-width: 350px) {
+      flex-direction: column;
+
+    }
+
   }
 
   &__stats-item {
@@ -50,6 +66,13 @@
   &__images {
     position: relative;
     top: -15px;
+  }
+
+  &__img {
+    @include mobile {
+      width: 290px;
+      height: 257px;
+    }
   }
 
 }

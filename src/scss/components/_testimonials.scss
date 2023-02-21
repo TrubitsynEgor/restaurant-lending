@@ -3,6 +3,11 @@
   padding-top: 84px;
   padding-bottom: 139px;
 
+  @include mobile {
+    padding-top: 10px;
+    padding-bottom: 56px;
+  }
+
   &__slider-pagination {
     position: relative;
     top: 25px;

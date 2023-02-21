@@ -6,6 +6,11 @@
   padding-top: 322px;
   padding-bottom: 231px;
 
+  @include mobile {
+    padding-bottom: 322px;
+  }
+
+
   &__content {
 
     max-width: 556px;
@@ -23,15 +28,31 @@
     color: var(--brandyPunch);
     margin-bottom: 5px;
 
+    @include mobile {
+      font-size: 30px;
+      line-height: 34px;
+      text-align: center;
+    }
+
     &--small {
       padding-left: 24px;
 
+      @include mobile {
+        padding-left: 0px;
+      }
     }
 
     &--big {
       font-size: 80px;
       line-height: 92px;
       padding-right: 56px;
+
+      @include mobile {
+        font-size: 40px;
+        text-align: center;
+        line-height: 46px;
+        padding-right: 0px;
+      }
     }
   }
 
@@ -45,6 +66,12 @@
     padding-right: 37px;
     margin-bottom: 21px;
 
+    @include mobile {
+      font-size: 15px;
+      line-height: 20px;
+      padding-right: 0px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -55,6 +82,9 @@
       height: 2px;
       background-color: #c4c4c4;
 
+      @include mobile {
+        display: none;
+      }
     }
 
     &::before {
@@ -67,6 +97,9 @@
       height: 2px;
       background-color: #c4c4c4;
 
+      @include mobile {
+        display: none;
+      }
     }
   }
 
@@ -74,6 +107,9 @@
     margin-right: 36px;
     width: 137px;
 
+    @include mobile {
+      margin-right: 0px;
+    }
   }
 }
 
