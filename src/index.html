@@ -45,6 +45,8 @@
 
     .main {
       flex: 1 0 auto;
+      position: relative;
+
     }
 
     html {
@@ -80,13 +82,15 @@
 
 
 
-  @include('partials/header.html')
+
 
   <main class="main">
+    @include('partials/header.html')
+    <main class="main-content"></main>
+    @include('partials/footer.html')
 
   </main>
 
-  @include('partials/footer.html')
 </body>
 
 </html>
