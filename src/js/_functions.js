@@ -2,8 +2,8 @@
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // Определение операционной системы на мобильных
-import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
+// import { mobileCheck } from "./functions/mobile-check";
+// console.log(mobileCheck())
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -30,8 +30,8 @@ import { burger } from './functions/burger';
 // import { enableScroll } from './functions/enable-scroll';
 
 // Реализация модального окна
-import GraphModal from 'graph-modal';
-const modal = new GraphModal();
+// import GraphModal from 'graph-modal';
+// const modal = new GraphModal();
 
 // Реализация табов
 // import GraphTabs from 'graph-tabs';
@@ -39,16 +39,16 @@ const modal = new GraphModal();
 
 //custom select choices.js:
 
-import Choices from 'choices.js';
-const element = document.querySelectorAll('.custom-select');
-if (element) {
-  element.forEach(el => {
-    const choices = new Choices(el, {
-      searchEnabled: false,
+// import Choices from 'choices.js';
+// const element = document.querySelectorAll('.custom-select');
+// if (element) {
+//   element.forEach(el => {
+//     const choices = new Choices(el, {
+//       searchEnabled: false,
 
-    });
-  })
-}
+//     });
+//   })
+// }
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
 

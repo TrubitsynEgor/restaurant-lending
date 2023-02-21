@@ -46,6 +46,9 @@
     .main {
       flex: 1 0 auto;
       position: relative;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
 
     }
 
@@ -89,6 +92,13 @@
     <main class="main-content">
       @include('partials/hero.html')
       @include('partials/benefits.html')
+      @include('partials/history.html')
+      @include('partials/reservation.html')
+      @include('partials/dishes.html')
+      @include('partials/menu.html')
+      @include('partials/testimonials.html')
+      @include('partials/galery.html')
+      @include('partials/chefs.html')
     </main>
     @include('partials/footer.html')
 

@@ -1,0 +1,24 @@
+.chefs {
+  padding-top: 94px;
+  padding-bottom: 96px;
+
+  &__title {
+    padding-bottom: 107px;
+
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+}
+
+.container {}
+
+.title {}

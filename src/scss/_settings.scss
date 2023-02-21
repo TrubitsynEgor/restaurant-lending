@@ -22,6 +22,11 @@ html {
   font-size: 16px;
 }
 
+.main-content {
+  flex: 1 0 auto;
+
+}
+
 
 img {
   height: auto;
@@ -114,11 +119,18 @@ address {
 
 
 .title {
+  margin: 0;
+  font-family: 'Tinos';
   font-weight: 400;
   font-size: 54px;
   line-height: 62px;
   color: var(--black);
   text-align: center;
+
+  &--light {
+    color: var(--light);
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  }
 
   & span {
     color: var(--brandyPunch);
